@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <!-- Gradient background -->
+    <defs>
+        <linearGradient id="gradBPLS" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#7C4DFF"/> <!-- JetBrains violet -->
+            <stop offset="100%" stop-color="#FFB300"/> <!-- JetBrains amber -->
+        </linearGradient>
+    </defs>
+
+    <!-- File shape -->
+    <rect x="0" y="0" width="16" height="16" rx="2" ry="2" fill="url(#gradBPLS)"/>
+
+    <!-- Fold corner -->
+    <path d="M12 0L16 4H12Z" fill="#FFFFFF33"/>
+
+    <!-- BPLS text (JetBrains Mono style layout) -->
+    <text x="3" y="12" font-family="JetBrains Mono, monospace" font-size="6" font-weight="bold" fill="#FFFFFF">
+        B
+    </text>
+    <text x="6.5" y="12" font-family="JetBrains Mono, monospace" font-size="6" font-weight="bold" fill="#FFF176">
+        P
+    </text>
+    <text x="9.3" y="12" font-family="JetBrains Mono, monospace" font-size="6" font-weight="bold" fill="#A5FFCE">
+        L
+    </text>
+    <text x="12" y="12" font-family="JetBrains Mono, monospace" font-size="6" font-weight="bold" fill="#BBDEFB">
+        S
+    </text>
+</svg>

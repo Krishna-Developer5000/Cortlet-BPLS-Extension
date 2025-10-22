@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <!-- 🔥 PLUGIN METADATA -->
+    <id>com.cortlet.bpls</id>
+    <name>BPLS</name>
+    <version>1.0.0</version>
+    <vendor url="https://www.cortlet.com">Cortlet</vendor>
+
+    <description><![CDATA[
+        <h1>BPLS Support</h1>
+        This plugin enables full BPLS Coding support.
+        <h2>Features</h2>
+        <ul>
+           <li>Syntax highlighting</li>
+           <li>Auto-suggest</li>
+           <li>New run configuration</li>
+           <li>Compatiable with any JetBrains IDE</li>
+        </ul>
+    ]]></description>
+
+    <!-- ⚙️ Platform Dependency -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <!-- 🧩 EXTENSIONS (NEW SYSTEM) -->
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Register .bpls files -->
+        <fileType
+                name="BPLS File"
+                language="BPLS"
+                extensions="bpls"
+                implementationClass="com.cortlet.bpls.BplsFileType" />
+
+        <!-- Register syntax highlighter -->
+        <lang.syntaxHighlighterFactory
+                language="BPLS"
+                implementationClass="com.cortlet.bpls.BplsSyntaxHighlighterFactory" />
+        <completion.contributor
+                language="BPLS"
+                implementationClass="com.cortlet.bpls.BplsCompletionContributor"/>
+        <lang.parserDefinition
+                language="BPLS"
+                implementationClass="com.cortlet.bpls.BplsParserDefinition"/>
+        <configurationType implementation="com.cortlet.bpls.BplsRunConfigurationType"/>
+        <annotator
+                language="BPLS"
+                implementationClass="com.cortlet.bpls.BplsAnnotator" />
+
+    </extensions>
+</idea-plugin>
