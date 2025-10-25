@@ -36,6 +36,24 @@ This plugin has maximum E# Support + Open sourced on GitHub.
 5. Click the green '▶️' button.
 6. See it emit output.
 
+## IDE Compatiability
+
+- IntelliJ IDEA Community
+- IntelliJ IDEA Ultimate
+- Pycharm Community
+- Pycharm Pro
+- RubyMine
+- Android Studio
+- GoLand
+- DataGrip
+- DataSpell
+- JetBrains Client
+- MPS
+- PhpStorm
+- Rider
+- WebStorm
+- RustRover
+... any JetBrains IDE you can think of ...
 
 ## License
 Apache 2.0
